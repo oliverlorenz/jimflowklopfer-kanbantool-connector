@@ -1,0 +1,18 @@
+jimFlowKlopfer:
+  run: true
+  photoDirectory: /path/to/photos/
+  jsonDirectory: /path/to/jsons/
+  command: python -m jimflowklopfer.__main__ %s %s
+board:
+  provider_name: KanbanTool
+  domain: YOUR_USERNAME
+  apiToken: YOUR_KANBANTOOL_API_TOKEN
+  boardId: KANBAN_BOARD_ID
+  columns:
+    0: 915574 # backlog
+    1: 915576 # selected
+    2: 744055 # in progress
+    3: 744057 # done
+  commands:
+    move: php /home/olorenz/documents/code/private/KanbantoolCLI/run.php task:move %s %s
+  ticketRegex: /(\d+)$/

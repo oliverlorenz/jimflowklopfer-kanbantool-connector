@@ -1,0 +1,22 @@
+{
+    "name": "oliverlorenz/jimflowklopfer-kanbantool-connector",
+    "require": {
+        "symfony/console": "2.5.*",
+        "symfony/config": "2.5.*",
+        "symfony/yaml": "2.5.*",
+        "php-curl-class/php-curl-class": "~2.1",
+        "oliverlorenz/php-kanbantool-cli": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "command\\": "src/command/",
+            "system\\": "src/system/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Oliver Lorenz",
+            "email": "mail@oliverlorenz.com"
+        }
+    ]
+}
